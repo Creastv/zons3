@@ -24,7 +24,7 @@ $descPM = get_field('opis_pod_logotypami_pm', 'options');
             <?php foreach ($logos as $logo) : ?>
                 <div class="item">
                     <?php if ($logo['link']): ?>
-                        <a href="<?php echo $logo['link']; ?>">
+                        <a href="<?php echo $logo['link']; ?>" target="_blank">
                         <?php endif; ?>
                         <?php if ($logo['logo']): ?>
                             <?php echo $logo['logo']; ?>
@@ -46,7 +46,7 @@ $descPM = get_field('opis_pod_logotypami_pm', 'options');
             <?php foreach ($logosPP as $logo) : ?>
                 <div class="item">
                     <?php if ($logo['link']): ?>
-                        <a href="<?php echo $logo['link']; ?>">
+                        <a href="<?php echo $logo['link']; ?>" target="_blank">
                         <?php endif; ?>
                         <?php if ($logo['logo']): ?>
                             <?php echo $logo['logo']; ?>
@@ -69,7 +69,7 @@ $descPM = get_field('opis_pod_logotypami_pm', 'options');
             <?php foreach ($logosPM as $logo) : ?>
                 <div class="item">
                     <?php if ($logo['link']): ?>
-                        <a href="<?php echo $logo['link']; ?>">
+                        <a href="<?php echo $logo['link']; ?>" target="_blank">
                         <?php endif; ?>
                         <?php if ($logo['logo']): ?>
                             <?php echo $logo['logo']; ?>
