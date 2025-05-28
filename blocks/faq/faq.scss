@@ -1,0 +1,113 @@
+@import "../../src/css/scss/variable";
+
+.faq__wraper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  // gap: 20px;
+  @media #{$sm} {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .col {
+    width: 100%;
+  }
+}
+.faq {
+  .accordion {
+    // margin-bottom: 24px;
+    margin-top: -1px;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    .question {
+      font-size: 1em;
+      font-weight: 700;
+      line-height: 1.625em;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      margin-bottom: 0px;
+      min-height: 75px;
+      cursor: pointer;
+      transition: all 0.3s;
+      @media #{$sm} {
+        font-size: 1em;
+        line-height: 1.625em;
+      }
+      span {
+        width: calc(100% - 24px);
+        padding: 10px 50px 10px 20px;
+        position: relative;
+        &:after {
+          content: "+";
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+          right: 15px;
+          display: block;
+          font-size: 1.375em !important;
+          color: var(--main);
+
+          font-weight: 400;
+        }
+      }
+      svg {
+        position: absolute;
+        right: 15px;
+        width: 16px;
+        pointer-events: none;
+      }
+    }
+    .answer {
+      border-radius: 6px;
+      height: 0;
+      overflow: hidden;
+      p {
+      }
+    }
+  }
+  .accordion.active {
+    background-color: #f6f6f6;
+    background-color: rgba(259, 259, 259, 1);
+    border: 2px solid var(--main);
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
+    .question {
+      //   border-bottom: 1px solid var(--main);
+      svg {
+        transform: rotate(180deg);
+      }
+      span {
+        &:after {
+          content: "-";
+        }
+      }
+    }
+    .answer {
+      height: auto;
+      padding: 0 24px 24px;
+    }
+  }
+  ul {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    @media #{$lg} {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
+  }
+}
+
+.hight-contrast {
+  .faq .accordion {
+    border-color: var(--black);
+  }
+  .accordion.active {
+    background-color: var(--white);
+  }
+}

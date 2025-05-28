@@ -1,2 +1,1 @@
-# reczna
 # zons3
