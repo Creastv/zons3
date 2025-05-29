@@ -33,7 +33,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "bebas-neue", sans-serif;
   font-weight: 700;
   font-style: normal;
   margin: 0;
@@ -484,7 +484,7 @@ body {
   position: relative;
 }
 .entry-header .entry-header__wrap .entry-label {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "bebas-neue", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 150px;
