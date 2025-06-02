@@ -33,9 +33,9 @@
 }
 .faq .accordion .question {
   font-family: "futura-pt", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
-  font-size: 1em;
+  font-size: 21px;
   font-weight: 700;
   line-height: 1.625em;
   position: relative;
@@ -47,6 +47,7 @@
   min-height: 75px;
   cursor: pointer;
   transition: all 0.3s;
+  color: var(--black);
 }
 @media only screen and (max-width: 768px) {
   .faq .accordion .question {
@@ -58,6 +59,7 @@
   width: calc(100% - 24px);
   padding: 10px 50px 10px 20px;
   position: relative;
+  color: var(--black);
 }
 .faq .accordion .question span:after {
   content: "+";

@@ -181,7 +181,7 @@ a span {
   transition: all 0.3s ease;
 }
 span {
-  color: var(--black);
+  color: var(--light-black);
 }
 
 .text-center {
