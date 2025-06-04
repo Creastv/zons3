@@ -15,7 +15,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 10px;
 }
 @media only screen and (max-width: 768px) {
   .b-etapy .b-etapy__wrap {
@@ -39,6 +39,7 @@
 }
 .b-etapy .b-etapy__item {
   text-align: center;
+  min-width: 200px;
 }
 @media only screen and (max-width: 768px) {
   .b-etapy .b-etapy__item {

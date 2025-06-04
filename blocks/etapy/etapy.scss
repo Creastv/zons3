@@ -8,7 +8,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 10px;
     @media #{$sm} {
       flex-wrap: wrap;
       gap: 0;
@@ -28,6 +28,7 @@
   }
   .b-etapy__item {
     text-align: center;
+    min-width: 200px;
     @media #{$sm} {
       position: relative;
     }

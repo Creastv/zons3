@@ -16,9 +16,18 @@
             <span class="sep"></span>
             <div class="content-wrap">
                 <div class="content content-col-1">
+                    <h4>Dzike drużyny</h4>
+                    <p>????</p>
+                </div>
+            </div>
+        </div>
+        <div class="b-etapy__item">
+            <span class="sep"></span>
+            <div class="content-wrap">
+                <div class="content content-col-1">
                     <h4>Roczniki</h4>
-                    <p>U-13 - 2013
-                        U-14 - 2012
+                    <p>U-13 - 2013<br>
+                        U-14 - 2012<br>
                         U-15 - 2011</p>
                 </div>
             </div>
