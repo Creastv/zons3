@@ -7,7 +7,7 @@ $articles = new WP_Query(array(
     'post_type' => 'post',
     'posts_per_page' => 3,
     'order' => 'DESC',
-    'category_name' => $category_name,
+    // 'category_name' => $category_name,
     'orderby'        => 'rand',
     'post__not_in' => array($active),
 
