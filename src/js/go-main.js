@@ -109,7 +109,7 @@ setTimeout(
          //add alt text if missing (but title is present)
          if (!images[i].alt) {
              // images[i].alt = 'test';
-      images[i].setAttribute('alt', 'RĘCZNA NA STADION');
+      images[i].setAttribute('alt', 'Z Orlika na Stadion');
          }
      }
  }, 1000);
