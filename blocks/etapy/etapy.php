@@ -5,22 +5,28 @@
             <div class="content-wrap">
                 <div class="content content-col-1">
                     <h4>Szkoły Podstawowe</h4>
-                    <p>Drużyny szkolne w których
-                        zgłoszonych będzie do 4 czynnych
-                        zawodników klubów sportowych
-                        piłkarskich</p>
+                    <p>Drużyny szkolne - maksymalnie 4 zawodników trenujących piłkę nożną w Klubach sportowych.</p>
+                </div>
+
+                <div class="content content-col-1">
+                    <h4>Dzike drużyny</h4>
+                    <p>Dziką drużynę mogą zgłosić wyłącznie osoby prowadzące zajęcia w ramach Programu Aktywna Szkoła,
+                        mające podpisaną umowę z Fundacją Orły Sportu.</p>
+                    <p>Maksymalnie 4 zawodników trenujących piłkę nożną w Klubach sportowych.</p>
                 </div>
             </div>
         </div>
-        <div class="b-etapy__item">
+        <!-- <div class="b-etapy__item">
             <span class="sep"></span>
             <div class="content-wrap">
                 <div class="content content-col-1">
                     <h4>Dzike drużyny</h4>
-                    <p>????</p>
+                    <p>Dziką drużynę mogą zgłosić wyłącznie osoby prowadzące zajęcia w ramach Programu Aktywna Szkoła,
+                        mające podpisaną umowę z Fundacją Orły Sportu.</p>
+                    <p>Maksymalnie 4 zawodników trenujących piłkę nożną w Klubach sportowych.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="b-etapy__item">
             <span class="sep"></span>
             <div class="content-wrap">
@@ -36,20 +42,24 @@
             <h3>ŚCIEŻKA JUNIOR PRO</h3>
             <div class="content-wrap">
                 <div class="content content-col-2">
-                    <h4>SPORTOWE
-                        SZKOŁY PODSTAWOWE</h4>
-                    <p>szkoła podstawowa sportowa
-                        i mistrzostwa sportowego
-                        oraz szkoły, w których utworzone
-                        zostały oddziały o profilu
-                        sportowym i profilu
-                        mistrzostwa sportowego</p>
+                    <h4>Szkoły sportowe</h4>
+                    <p>Szkoła podstawowa sportowa i mistrzostwa sportowego oraz szkoły, w których utworzone zostały
+                        oddziały o profilu sportowym i profilu mistrzostwa sportowego.</p>
+                </div>
+                <div class="content content-col-2">
+                    <h4>Szkoły podstawowe</h4>
+                    <p>Jeśli w składzie jest więcej niż 4 zawodników trenujących piłkę nożną w Klubach sportowych.</p>
                 </div>
                 <div class="content content-col-2">
                     <h4>KLUBY SPORTOWE
                         PIŁKARSKIE</h4>
-                    <p>szkółki,
-                        akademie piłkarskie</p>
+                    <p>Kluby, szkółki i akademie, w których zawodnicy trenują piłkę nożną.</p>
+                </div>
+                <div class="content content-col-2">
+                    <h4>Dzikie drużyny</h4>
+                    <p>Jeśli w składzie jest więcej niż 4 zawodników trenujących piłkę nożną w Klubach sportowych.</p>
+                    <p>Dziką drużynę mogą zgłosić wyłącznie osoby prowadzące zajęcia w ramach Programu Aktywna Szkoła,
+                        mające podpisaną umowę z Fundacją Orły Sportu.</p>
                 </div>
             </div>
         </div>
