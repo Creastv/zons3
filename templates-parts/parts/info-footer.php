@@ -9,6 +9,9 @@ $descPP = get_field('opis_pod_logotypami_pp', 'options');
 
 $logosPM = get_field('logotypy_pm', 'options');
 $descPM = get_field('opis_pod_logotypami_pm', 'options');
+
+$logosOP = get_field('logotypy_-_operatorzy', 'options');
+$descOP = get_field('opis_pod_logotypami_-_operatorzy', 'options');
 ?>
 
 <div class="info-partners">
@@ -37,10 +40,12 @@ $descPM = get_field('opis_pod_logotypami_pm', 'options');
         </div>
     <?php endif; ?>
     <?php if ($desc) : ?>
-        <div class="info-partners__desc"><?php echo $desc; ?></div>
+        <div class="info-partners__desc info-partners_desc--logos"><?php echo $desc; ?></div>
     <?php endif; ?>
 
-
+    <?php if ($descPP) : ?>
+        <div class="info-partners__desc"><?php echo $descPP; ?></div>
+    <?php endif; ?>
     <?php if ($logosPP) : ?>
         <div class="info-partners__logos">
             <?php foreach ($logosPP as $logo) : ?>
@@ -58,30 +63,34 @@ $descPM = get_field('opis_pod_logotypami_pm', 'options');
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <?php if ($descPP) : ?>
-        <div class="info-partners__desc"><?php echo $descPP; ?></div>
+
+
+
+    <?php if ($descOP) : ?>
+        <div class="info-partners__desc"><?php echo $descOP; ?></div>
     <?php endif; ?>
-
-
-
-    <?php if ($logosPM) : ?>
-        <div class="info-partners__logos">
-            <?php foreach ($logosPM as $logo) : ?>
-                <div class="item">
-                    <?php if ($logo['link']): ?>
-                        <a href="<?php echo $logo['link']; ?>" target="_blank">
-                        <?php endif; ?>
-                        <?php if ($logo['logo']): ?>
-                            <?php echo $logo['logo']; ?>
-                        <?php endif; ?>
-                        <?php if ($logo['link']) : ?>
-                        </a>
-                    <?php endif; ?>
+    <?php if ($logosOP) : ?>
+        <div class="info-partners__logos info-partners__logos--op ">
+            <div class="swiper js-op">
+                <div class=" swiper-wrapper">
+                    <?php foreach ($logosOP as $logo) : ?>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <?php if ($logo['link']): ?>
+                                    <a href="<?php echo $logo['link']; ?>" target="_blank">
+                                    <?php endif; ?>
+                                    <?php if ($logo['logo']): ?>
+                                        <?php echo wp_get_attachment_image($logo['logo'], 'logo'); ?>
+                                    <?php endif; ?>
+                                    <?php if ($logo['link']) : ?>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
-            <?php endforeach; ?>
+            </div>
         </div>
     <?php endif; ?>
-    <?php if ($descPM) : ?>
-        <div class="info-partners__desc"><?php echo $descPM; ?></div>
-    <?php endif; ?>
+
 </div>

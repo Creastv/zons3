@@ -18,6 +18,7 @@ add_theme_support('post-thumbnails');
 add_theme_support('custom-logo');
 add_image_size('post-futured', 300, 300, array('center', 'center'), true);
 add_image_size('product-image', 600, 600, array('center', 'center'), true);
+add_image_size('logo', 9999, 53, false);
 
 if (!function_exists('go_register_nav_menu')) {
 	function go_register_nav_menu()

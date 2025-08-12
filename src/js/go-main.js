@@ -148,3 +148,35 @@ setTimeout(
 // });
 
 
+var swiper = new Swiper(".js-op", {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  loop: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: false,
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 30
+    },
+    1024: {
+      slidesPerView: 65,
+      spaceBetween: 50
+    },
+    1366: {
+      slidesPerView: 8,
+      spaceBetween: 50
+    }
+  }
+});

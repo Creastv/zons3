@@ -1349,6 +1349,26 @@ body.archive .entry-header h1 {
 .info-partners__desc {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.info-partners_desc--logos {
+  margin-top: 0px !important;
+}
+
+.info-partners__logos--op {
+  padding: 20px 0;
+}
+.info-partners__logos--op .swiper-wrapper {
+  align-items: center;
+}
+.info-partners__logos--op .item {
+  text-align: center;
+}
+.info-partners__logos--op .item img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
 }
 
 .error404 .entry-title {
