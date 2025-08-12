@@ -3,7 +3,7 @@ $table = get_field('tabela');
 
 if (! empty($table)) {
     echo '<figure class="wp-block-table">';
-    echo '<table class="has-fixed-layout">';
+    echo '<table>';
 
     if (! empty($table['caption'])) {
 
