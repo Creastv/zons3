@@ -150,7 +150,7 @@ setTimeout(
 
 var swiper = new Swiper(".js-op", {
   slidesPerView: 3,
-  spaceBetween: 50,
+  spaceBetween: 20,
   loop: true,
   autoplay: {
     delay: 3500,
@@ -163,7 +163,7 @@ var swiper = new Swiper(".js-op", {
 
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20
     },
     768: {
