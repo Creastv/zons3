@@ -2,6 +2,7 @@
 $title = get_field('title');
 $phone = get_field('phone_no');
 $email = get_field('email');
+$emailTwo = get_field('email_two');
 $desc = get_field('desc');
 $link = get_field('link');
 if ($link):
@@ -56,6 +57,21 @@ endif;
                     <a href="tel:<?php echo $email; ?>">
                         <span class="label"><?php echo _e('Napisz do nas', 'go'); ?></span>
                         <?php echo $email; ?>
+                    </a>
+                </div>
+            </div>
+        <?php endif; ?>
+		<?php if ($emailTwo) : ?>
+            <div class="b-info-contact__item">
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.1668 6.00008C20.1668 4.99175 19.3418 4.16675 18.3335 4.16675H3.66683C2.6585 4.16675 1.8335 4.99175 1.8335 6.00008M20.1668 6.00008V17.0001C20.1668 18.0084 19.3418 18.8334 18.3335 18.8334H3.66683C2.6585 18.8334 1.8335 18.0084 1.8335 17.0001V6.00008M20.1668 6.00008L11.0002 12.4167L1.8335 6.00008"
+                        stroke="#FD5B39" stroke-width="0.88" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="b-info-contact__item__con">
+                    <a href="tel:<?php echo $emailTwo; ?>">
+                        <span class="label"><?php echo _e('Napisz do nas', 'go'); ?></span>
+                        <?php echo $emailTwo; ?>
                     </a>
                 </div>
             </div>
