@@ -40,6 +40,7 @@
 }
 .info-partners__logos {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 50px;
@@ -52,6 +53,15 @@
     gap: 20px;
   }
   .item {
+  }
+}
+.cd {
+  align-self: stretch;
+  width: 3px;
+  background-color: var(--gray);
+  @media #{$sm} {
+    width: 100%;
+    height: 1px;
   }
 }
 .info-partners__desc {
