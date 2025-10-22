@@ -74,7 +74,7 @@
     min-height: 430px;
     @media #{$sm} {
       min-height: initial;
-      height: calc(100vh + 100px);
+      height: calc(100vh + 50px);
     }
   }
   .b-hero__content {

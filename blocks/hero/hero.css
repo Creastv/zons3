@@ -93,7 +93,7 @@
 @media only screen and (max-width: 768px) {
   .b-hero .b-hero__wrap {
     min-height: initial;
-    height: calc(100vh + 100px);
+    height: calc(100vh + 50px);
   }
 }
 .b-hero .b-hero__content {
