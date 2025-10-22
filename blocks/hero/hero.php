@@ -10,6 +10,7 @@ $social_links = [
 $subtitle = get_field('subtitle');
 $title = get_field('title');
 $subtitle_under = get_field('subtitle_under');
+$desc = get_field('desc');
 ?>
 
 
@@ -29,6 +30,11 @@ $subtitle_under = get_field('subtitle_under');
                 <?php echo $title; ?>
                 <small><?php echo $subtitle_under; ?></small>
             </h1>
+            <?php if ($desc) : ?>
+                <div class="desc">
+                    <?php echo $desc; ?>
+                </div>
+            <?php endif; ?>
             <InnerBlocks />
         </div>
     </div>
