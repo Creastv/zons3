@@ -93,6 +93,7 @@
 @media only screen and (max-width: 768px) {
   .b-hero .b-hero__wrap {
     min-height: initial;
+    height: calc(100vh + 100px);
   }
 }
 .b-hero .b-hero__content {
@@ -189,6 +190,11 @@
   padding-left: 30px;
   position: relative;
   color: #16a34a; /* dowolny kolor ✓ */
+}
+@media only screen and (max-width: 768px) {
+  .b-hero .desc ul {
+    padding-left: 0px;
+  }
 }
 .b-hero .desc li {
   position: relative;

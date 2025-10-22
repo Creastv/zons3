@@ -74,7 +74,7 @@
     min-height: 430px;
     @media #{$sm} {
       min-height: initial;
-      // height: 60vh;
+      height: calc(100vh + 100px);
     }
   }
   .b-hero__content {
@@ -166,6 +166,9 @@
       padding-left: 30px;
       position: relative;
       color: #16a34a; /* dowolny kolor ✓ */
+      @media #{$sm} {
+        padding-left: 0px;
+      }
     }
     li {
       position: relative;
