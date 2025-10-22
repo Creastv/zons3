@@ -1,5 +1,6 @@
 <?php
 $bg = get_field('bg');
+$kv = get_field('kv');
 $social_links = [
     'facebook'  => get_theme_mod('facebook_url', ''),
     'instagram' => get_theme_mod('instagram_url', ''),
@@ -8,6 +9,7 @@ $social_links = [
 ];
 $subtitle = get_field('subtitle');
 $title = get_field('title');
+$subtitle_under = get_field('subtitle_under');
 ?>
 
 
@@ -17,13 +19,15 @@ $title = get_field('title');
             <?php echo wp_get_attachment_image($bg, 'full', false, array('class' => 'go-parallex')); ?>
         </div>
         <div class="kids">
-            <img class="go-parallex-kids" src="<?php echo get_template_directory_uri(); ?>/src/img/dzieci3.png"
-                alt="<?php the_title(); ?> ">
+            <?php echo wp_get_attachment_image($kv, 'full', false, array('class' => 'go-parallex-kids')); ?>
+            <!-- <img class="go-parallex-kids" src="<?php echo get_template_directory_uri(); ?>/src/img/dzieci4.png"
+                alt="<?php the_title(); ?> "> -->
         </div>
         <div class="b-hero__content">
             <h1>
                 <small><?php echo $subtitle; ?></small>
                 <?php echo $title; ?>
+                <small><?php echo $subtitle_under; ?></small>
             </h1>
             <InnerBlocks />
         </div>

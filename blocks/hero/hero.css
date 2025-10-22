@@ -49,6 +49,7 @@
   right: 10%;
   bottom: 0;
   height: 90%;
+  width: auto;
 }
 @media only screen and (max-width: 1500px) {
   .b-hero .kids img {
