@@ -252,3 +252,31 @@
     }
   }
 }
+
+.marquee-wrap {
+  background: red;
+  width: 100%;
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: -61px;
+  top: 82px;
+  transform: rotate(24deg);
+  padding: 5px;
+  @media #{$slg} {
+    width: 80%;
+    // right: -40px;
+  }
+  @media #{$sm} {
+    width: 100%;
+    right: 0px;
+    transform: rotate(0deg);
+    top: initial;
+    bottom: 80px;
+  }
+  h3 {
+    width: 100%;
+    color: var(--white);
+    width: 100px;
+  }
+}

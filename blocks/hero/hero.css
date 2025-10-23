@@ -272,4 +272,35 @@
 }
 .sm-hero ul li:hover a svg path {
   fill: var(--main);
+}
+
+.marquee-wrap {
+  background: red;
+  width: 100%;
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: -61px;
+  top: 82px;
+  transform: rotate(24deg);
+  padding: 5px;
+}
+@media only screen and (max-width: 1200px) {
+  .marquee-wrap {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .marquee-wrap {
+    width: 100%;
+    right: 0px;
+    transform: rotate(0deg);
+    top: initial;
+    bottom: 80px;
+  }
+}
+.marquee-wrap h3 {
+  width: 100%;
+  color: var(--white);
+  width: 100px;
 }/*# sourceMappingURL=hero.css.map */
