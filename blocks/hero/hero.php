@@ -8,6 +8,7 @@ $social_links = [
     'tiktok'  => get_theme_mod('tiktok_url', ''),
 ];
 $subtitle = get_field('subtitle');
+$subtitle_above = get_field('subtitle_two');
 $title = get_field('title');
 $subtitle_under = get_field('subtitle_under');
 $desc = get_field('desc');
@@ -22,10 +23,13 @@ $marquee = get_field('marquee');
         </div>
         <div class="kids">
             <?php echo wp_get_attachment_image($kv, 'full', false, array('class' => 'go-parallex-kids')); ?>
-            <!-- <img class="go-parallex-kids" src="<?php echo get_template_directory_uri(); ?>/src/img/dzieci4.png"
-                alt="<?php the_title(); ?> "> -->
         </div>
         <div class="b-hero__content">
+            <?php if ($subtitle_above) : ?>
+                <p class="subtitle-above">
+                    <?php echo $subtitle_above; ?>
+                </p>
+            <?php endif; ?>
             <h1>
                 <small><?php echo $subtitle; ?></small>
                 <?php echo $title; ?>

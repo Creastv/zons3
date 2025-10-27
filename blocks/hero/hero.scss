@@ -124,17 +124,32 @@
         font-size: 48px !important;
       }
     }
+    .subtitle-above {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid var(--white);
+      padding-bottom: 20px;
+      line-height: 1 !important;
+      font-size: 2vw !important;
+      @media #{$sm} {
+        font-size: 24px !important;
+      }
+    }
     h1,
     p {
       color: var(--white);
     }
-    h1 {
-      font-size: 71px;
-      line-height: normal;
-      @media #{$sm} {
-        font-size: 31px;
-      }
-    }
+    // h1 {
+    //   font-size: 71px;
+    //   line-height: normal;
+    //   @media #{$sm} {
+    //     font-size: 31px;
+    //   }
+    // }
   }
   .btn-rev {
     border-color: var(--white) !important;
