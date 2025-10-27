@@ -149,7 +149,7 @@ setTimeout(
 
 
 var swiper = new Swiper(".js-op", {
-  slidesPerView: 3,
+  slidesPerView: 5,
   spaceBetween: 20,
   loop: true,
   autoplay: {
@@ -163,20 +163,20 @@ var swiper = new Swiper(".js-op", {
 
   breakpoints: {
     640: {
-      slidesPerView: 3,
-      spaceBetween: 20
+      slidesPerView: 5,
+
     },
     768: {
       slidesPerView: 5,
-      spaceBetween: 30
+
     },
     1024: {
-      slidesPerView: 65,
-      spaceBetween: 50
+      slidesPerView: 15,
+      
     },
     1366: {
-      slidesPerView: 8,
-      spaceBetween: 50
+      slidesPerView: 15,
+      
     }
   }
 });

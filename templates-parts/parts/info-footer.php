@@ -24,7 +24,7 @@ $descOP = get_field('opis_pod_logotypami_-_operatorzy', 'options');
         </div>
     <?php endif; ?>
     <?php if ($logos) : ?>
-        <div class="info-partners__logos">
+        <div class="info-partners__logos info-partners__logos--first">
             <?php foreach ($logos as $logo) : ?>
                 <div class="item">
                     <?php if ($logo['link']): ?>

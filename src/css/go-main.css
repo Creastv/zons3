@@ -1284,7 +1284,7 @@ body.archive .entry-header h1 {
 }
 
 .info-partners {
-  padding: 50px 0 0;
+  padding: 0px 0 0;
 }
 
 .info-partners__hastags {
@@ -1332,7 +1332,7 @@ body.archive .entry-header h1 {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  padding: 50px 0 20px;
+  padding: 10px 0 10px;
 }
 @media only screen and (max-width: 998px) {
   .info-partners__logos {
@@ -1345,6 +1345,10 @@ body.archive .entry-header h1 {
     gap: 20px;
   }
 }
+.info-partners__logos--first {
+  padding-top: 50px;
+}
+
 .cd {
   align-self: stretch;
   width: 3px;

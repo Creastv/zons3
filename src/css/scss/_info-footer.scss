@@ -1,5 +1,5 @@
 .info-partners {
-  padding: 50px 0 0;
+  padding: 0px 0 0;
 }
 .info-partners__hastags {
   position: relative;
@@ -38,13 +38,15 @@
     }
   }
 }
+
 .info-partners__logos {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  padding: 50px 0 20px;
+  padding: 10px 0 10px;
+
   @media #{$md} {
     gap: 15px;
   }
@@ -54,6 +56,9 @@
   }
   .item {
   }
+}
+.info-partners__logos--first {
+  padding-top: 50px;
 }
 .cd {
   align-self: stretch;
