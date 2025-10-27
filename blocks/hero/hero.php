@@ -26,9 +26,9 @@ $marquee = get_field('marquee');
         </div>
         <div class="b-hero__content">
             <?php if ($subtitle_above) : ?>
-                <p class="subtitle-above">
+                <h2 class="subtitle-above">
                     <?php echo $subtitle_above; ?>
-                </p>
+                </h2>
             <?php endif; ?>
             <h1>
                 <small><?php echo $subtitle; ?></small>

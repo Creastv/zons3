@@ -125,18 +125,27 @@
       }
     }
     .subtitle-above {
+      position: relative;
       font-size: 24px;
       font-weight: 700;
       color: var(--white);
       text-transform: uppercase;
       margin: 0;
       padding: 0;
-      border-bottom: 1px solid var(--white);
       padding-bottom: 20px;
       line-height: 1 !important;
       font-size: 2vw !important;
       @media #{$sm} {
         font-size: 24px !important;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 1px;
+        background-color: var(--white);
       }
     }
     h1,
