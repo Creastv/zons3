@@ -13,6 +13,9 @@ $descPM = get_field('opis_pod_logotypami_pm', 'options');
 
 $logosOP = get_field('logotypy_-_operatorzy', 'options');
 $descOP = get_field('opis_pod_logotypami_-_operatorzy', 'options');
+
+$miasta = get_field('miasta', 'options');
+$miasta_desc = get_field('opis_pod_logotypami_miasta', 'options');
 ?>
 
 <div class="info-partners">
@@ -97,6 +100,28 @@ $descOP = get_field('opis_pod_logotypami_-_operatorzy', 'options');
                 </div>
             <?php endforeach; ?>
         </div>
+    <?php endif; ?>
+    <?php if ($miasta_desc) : ?>
+        <div class="info-partners__desc"><?php echo $miasta_desc; ?></div>
+    <?php endif; ?>
+    <?php if ($miasta) : ?>
+        <?php foreach ($miasta as $miasto) : ?>
+            <div class="info-partners__logos">
+                <?php foreach ($miasto['wiersz'] as $logo) : ?>
+                    <div class="item">
+                        <?php if ($logo['link']): ?>
+                            <a href="<?php echo $logo['link']; ?>" target="_blank">
+                            <?php endif; ?>
+                            <?php if ($logo['logo']): ?>
+                                <?php echo wp_get_attachment_image($logo['logo'], 'thumbnail'); ?>
+                            <?php endif; ?>
+                            <?php if ($logo['link']) : ?>
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php endforeach; ?>
     <?php endif; ?>
 
     <?php if ($descOP) : ?>
