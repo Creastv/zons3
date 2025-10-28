@@ -1347,8 +1347,13 @@ body.archive .entry-header h1 {
 }
 .info-partners__logos .item svg,
 .info-partners__logos .item img {
+  width: auto;
   max-width: 120px;
-  height: auto;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 @media only screen and (max-width: 768px) {
   .info-partners__logos .item svg,
@@ -1381,8 +1386,8 @@ body.archive .entry-header h1 {
 
 .info-partners__desc {
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .info-partners_desc--logos {
@@ -1399,9 +1404,13 @@ body.archive .entry-header h1 {
   text-align: center;
 }
 .info-partners__logos--op .item img {
-  width: 100%;
-  max-width: 100px;
-  height: auto;
+  width: auto;
+  height: 60px;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .error404 .entry-title {
