@@ -60,7 +60,7 @@ $miasta_desc = get_field('opis_pod_logotypami_miasta', 'options');
         </div>
     <?php endif; ?>
     <?php if ($desc) : ?>
-        <div class="info-partners__desc info-partners_desc--logos"><?php echo $desc; ?></div>
+        <div class="info-partners__desc info-partners_desc--logos info-partners__logos--second"><?php echo $desc; ?></div>
     <?php endif; ?>
 
     <?php if ($descPP) : ?>
@@ -85,7 +85,7 @@ $miasta_desc = get_field('opis_pod_logotypami_miasta', 'options');
     <?php endif; ?>
 
     <?php if ($logosPM) : ?>
-        <div class="info-partners__logos">
+        <div class="info-partners__logos info-partners__logos--third">
             <?php foreach ($logosPM as $logo) : ?>
                 <div class="item">
                     <?php if ($logo['link']): ?>
