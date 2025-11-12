@@ -19,7 +19,20 @@ $marquee = get_field('marquee');
 <section class="b-hero">
     <div class="b-hero__wrap">
         <div class="img">
-            <?php echo wp_get_attachment_image($bg, 'full', false, array('class' => 'go-parallex')); ?>
+            <?php
+            $poster_url = '';
+            if (!empty($bg)) {
+                if (is_array($bg)) {
+                    $poster_url = $bg['url'] ?? '';
+                } elseif (is_numeric($bg)) {
+                    $poster_url = wp_get_attachment_url($bg);
+                    // http://localhost/kongres/wp-admin/edit.php?post_type=page}
+                }
+            }
+
+            if (!empty($bg)) : ?>
+                <?php echo wp_get_attachment_image($bg, 'full', false, array('class' => 'go-parallex')); ?>
+            <?php endif; ?>
         </div>
         <div class="kids">
             <?php echo wp_get_attachment_image($kv, 'full', false, array('class' => 'go-parallex-kids')); ?>
@@ -162,4 +175,4 @@ $marquee = get_field('marquee');
             });
         });
     </script>
-<?php endif; ?>
+<?php endif;

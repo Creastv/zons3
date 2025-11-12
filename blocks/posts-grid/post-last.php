@@ -3,6 +3,7 @@ $po = array(
     'post_type' => 'post',
     'posts_per_page' => 4,
     'ignore_sticky_posts' => 1,
+    'category__not_in' => [23]
 );
 $query_posts_one = new WP_Query($po);
 

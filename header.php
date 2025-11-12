@@ -43,7 +43,9 @@
         <?php get_template_part('templates-parts/header/header', 'nav'); ?>
         <?php get_template_part('templates-parts/header/header', 'burger'); ?>
         <?php get_template_part('templates-parts/header/header', 'partners'); ?>
+        <a href="https://system.zorlikanastadion.pl/login" class="btn logowanie" target="_blank">Logowanie</a>
     </header>
+
 
 
     <main id="main">

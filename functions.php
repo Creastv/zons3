@@ -137,3 +137,14 @@ if (function_exists('acf_add_options_page')) {
 		'parent_slug' => 'themes.php',
 	));
 }
+
+function exclude_category_from_listings($query)
+{
+	if (!is_admin() && $query->is_main_query()) {
+		// Wyklucz kategorię o ID 5
+		if ($query->is_home() || $query->is_archive() || $query->is_search()) {
+			$query->set('cat', '-23');
+		}
+	}
+}
+add_action('pre_get_posts', 'exclude_category_from_listings');
